@@ -11,8 +11,8 @@ public function behaviors() {
   return [
     'OracleNextValBehavior' => [
       'class' => 'application.components.OracleNextValBehavior',
-      'sequence' => GedHelper::getFullTableName('SEQ_GED_USER')
+      'sequence' => 'SEQ_GED_USER'
     ]
-];
+  ];
 }
 ```
