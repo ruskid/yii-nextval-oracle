@@ -31,7 +31,6 @@ class OracleNextValBehavior extends CActiveRecordBehavior {
         if ($AR->getIsNewRecord()) {
             $AR->{$AR->tableSchema->primaryKey} = $this->getNextVal();
         }
-        parent::afterSave($event);
     }
 
     /**
